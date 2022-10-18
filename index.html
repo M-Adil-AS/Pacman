@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+
+    <body>
+        <div id='container'>
+            <div id='score-board'>
+                <span id='score-text'>Score:&nbsp;</span>
+                <span id='score-value'>0</span>
+            </div>
+
+            <div id='maze'>
+                <img src="images/maze.png" id='mazeImg'>
+                <div id='pacman'></div>
+                <div id='pointer-box'><span id='pointer'>&#9658;</span></div>
+                <div id='blinky' class='ghost'></div>
+                <div id='pinky' class='ghost'></div>
+                <div id='inky' class='ghost'></div>
+                <div id='clyde' class='ghost'></div>
+                <div id='message'>Press Enter</div>
+            </div>
+
+            <div id='lives-board'>
+                <span id='lives-text'>Lives left:</span>
+                <img src='images/pacman.png'>
+                <img src='images/pacman.png'>
+                <img src='images/pacman.png'>
+            </div>
+        </div>
+
+        <audio src='sound effects/siren_1.wav' id='bgMusic' loop></audio>
+    </body>
+    
+    <script src='scripts/global.js'></script>
+    <script src='scripts/data.js'></script>
+    <script src='scripts/initialize.js'></script>
+    <script src='scripts/AI.js'></script>
+    <script src='scripts/utility.js'></script>
+    <script src='scripts/visual.js'></script>
+    <script src='scripts/event.js'></script>
+    <script src='scripts/movement.js'></script>
+    <script src='scripts/timing.js'></script>
+</html>

@@ -1,0 +1,154 @@
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    position: absolute;
+    margin: auto;
+    top:0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    height:600px;
+    width:530px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#maze{
+    height:500px;
+}
+
+#mazeImg{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.dot{
+    position: absolute;
+    height:4px;
+    width:4px;
+    background: white;
+}
+
+.power{
+    position: absolute;
+    height:12px;
+    width:12px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink{
+    50%   {background: black;}
+    100%  {background: white;}
+}
+
+#pacman{
+    position: absolute;
+    height:24px;
+    width:24px;
+    background: gold;
+    margin-left:253px;
+    margin-top:367px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.ghost{
+    position: absolute;
+    height:24px;
+    width:24px;
+    z-index: 3;
+}
+
+.wear_off{
+    animation: wear_off 3.5s linear infinite;
+}
+
+@keyframes wear_off{
+     0%   {background: blue;}
+    10%   {background: white;}  
+    20%   {background: blue;}
+    30%   {background: white;}
+    40%   {background: blue;}
+    50%   {background: white;}
+    60%   {background: blue;}
+    70%   {background: white;}
+    80%   {background: blue;}
+    90%   {background: white;}
+   100%   {background: blue;}
+}
+
+#blinky{
+    background: red;
+    margin-left:253px;
+    margin-top:175px;
+}
+
+#pinky{
+    background: hotpink;
+    margin-left:253px;
+    margin-top:223px;
+}
+
+#inky{
+    background: cyan;
+    margin-left:221px;
+    margin-top:223px;
+}
+
+#clyde{
+    background: orange;
+    margin-left:285px;
+    margin-top:223px;
+}
+
+#message{
+    position: absolute;
+    color:white;
+    width:160px;
+    text-align: center;
+    margin: auto;
+    left:0;
+    right:0;
+    margin-top:274px;
+    z-index:5;
+}
+
+#score-board, #lives-board{
+    height:50px;
+    color:white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lives-board img{
+    width:23px;
+    height:auto;
+    margin-left:5px;
+}
+
+#pointer-box{
+    position: absolute;
+    color:gold;
+    display: flex;
+    align-items: center;
+    height:43px;
+    width:43px;
+    margin-left:243.5px;
+    margin-top:357.5px;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+#pointer{
+    margin-left: 40px;
+}
