@@ -1,5 +1,6 @@
 # Pacman
 A Browser Game I made as a personal project.
+Each ghost has unique behaviour determined by its AI.
 
 Demo Video:
 
