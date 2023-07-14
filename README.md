@@ -1,8 +1,11 @@
 # Pacman
-A Browser Game I made as a personal project.
-Each ghost has unique behaviour determined by its AI.
+A clone of Pacman Game using JavaScript.
 
-Also this project's tutorial is uploaded on my youTube channel.
+Each ghost in the game has a unique behaviour determined by its AI.
+
+Each ghost behaves differently in each of the four modes: Chase, Scatter, Fear, Eaten
+
+Demo URL: https://m-adil-as.github.io/Pacman
 
 Demo Video:
 
